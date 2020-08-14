@@ -41,6 +41,10 @@ nav.navigation ul.links {
   display: flex;
 }
 
+nav.navigation .menu {
+  display: none;
+}
+
 nav.navigation ul.links li {
   list-style: none;
 }
@@ -59,7 +63,8 @@ nav.navigation ul.links li a.active, nav.navigation ul.links li a:hover {
 }
 
 .container {
-  width: 750px;
+  max-width: 750px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
   min-height: calc(100vh - 100px - 60px);
@@ -163,4 +168,37 @@ pre {
 
 pre code {
   border: 0;
+}
+
+@media screen and (max-width:768px) {
+  
+  nav.navigation {
+    background-color: #333;
+  }
+
+  nav.navigation ul.links {
+    display: none;
+  }
+
+  nav.navigation .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin-right: -20px;
+    background-color: #333;
+    color: #fff;
+  }
+
+  .list .item .meta {
+    display: block;
+  }
+  .list .item .meta .datetime {
+    margin-top: 10px;
+  }
+
+  .container .post .meta {
+    display: block;
+  }
 }
