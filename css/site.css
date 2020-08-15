@@ -13,7 +13,7 @@
 body {
   background-color: #fff;
   margin: 0;
-  font-family: 'Mate', Georgia, 'Times New Roman', Times, STKaiti, 'KaiTi', 'AR PL UKai CN', 'ukai', serif;
+  font-family: 'Mate', Georgia, 'Times New Roman', Times, STKaiti, 'AR PL UKai CN', 'KaiTi', "楷体","楷体_GB2312", 'ukai', serif;
   /* font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif; */
   font-size: 20px;  
   color: #333;
@@ -69,7 +69,7 @@ nav.navigation ul.links li a {
   line-height: 60px;
   padding: 0 15px;
   font-size: 20px;
-  font-family: 'Lobster', Georgia, 'Times New Roman', Times, STKaiti, 'KaiTi', 'AR PL UKai CN', 'ukai', serif;
+  font-family: 'Lobster', Georgia, 'Times New Roman', Times, STKaiti, 'AR PL UKai CN', 'KaiTi', "楷体","楷体_GB2312", 'ukai', serif;
 }
 
 nav.navigation ul.links li a.active, nav.navigation ul.links li a:hover {
@@ -92,7 +92,7 @@ nav.navigation ul.links li a.active, nav.navigation ul.links li a:hover {
 
 .container .post h1.title {
   font-size: 34px;
-  font-family: 'Lobster', Georgia, 'Times New Roman', Times, STKaiti, 'KaiTi', 'AR PL UKai CN', 'ukai', serif;
+  font-family: 'Lobster', Georgia, 'Times New Roman', Times, STKaiti, 'AR PL UKai CN', 'KaiTi', "楷体","楷体_GB2312", 'ukai', serif;
 }
 
 .container .post h4 {
@@ -128,7 +128,7 @@ nav.navigation ul.links li a.active, nav.navigation ul.links li a:hover {
 
 .list h1.title {
   font-size: 30px;
-  font-family: 'Lobster', Georgia, 'Times New Roman', Times, STKaiti, 'KaiTi', 'AR PL UKai CN', 'ukai', serif;
+  font-family: 'Lobster', Georgia, 'Times New Roman', Times, STKaiti, 'AR PL UKai CN', 'KaiTi', "楷体","楷体_GB2312", 'ukai', serif;
 }
 .list h1.title a {
   color: #333;
@@ -240,7 +240,7 @@ pre code {
     text-align: right;
     line-height: 40px;
     padding: 10px 20px;
-    font-family: 'Lobster', Georgia, 'Times New Roman', Times, STKaiti, 'KaiTi', 'AR PL UKai CN', 'ukai', serif;
+    font-family: 'Lobster', Georgia, 'Times New Roman', Times, STKaiti, 'AR PL UKai CN', 'KaiTi', "楷体","楷体_GB2312", 'ukai', serif;
   }
   .menu-container a:hover {
     color: #fff;
