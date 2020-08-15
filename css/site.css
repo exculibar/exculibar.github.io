@@ -1,9 +1,21 @@
+@font-face {
+  font-family: 'ukai';
+  src: url('../font/UKaiCN.eot');
+  src:
+    url('../font/UKaiCN.eot?#font-spider') format('embedded-opentype'),
+    url('../font/UKaiCN.woff') format('woff'),
+    url('../font/UKaiCN.ttf') format('truetype'),
+    url('../font/UKaiCN.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: #fff;
   margin: 0;
-  font-family: 'Mate', Georgia, 'Times New Roman', Times, STKaiti, "楷体","楷体_GB2312", 'AR PL UKai CN', serif;
+  font-family: 'Mate', Georgia, 'Times New Roman', Times, STKaiti, "楷体","楷体_GB2312", 'AR PL UKai CN', 'ukai', serif;
   /* font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif; */
-  font-size: 20px;
+  font-size: 20px;  
   color: #333;
 }
 
@@ -161,6 +173,7 @@ nav.navigation ul.links li a.active, nav.navigation ul.links li a:hover {
   align-items: center;
   justify-content: center;
   color: #fff;
+  font-size: 14px;
 }
 
 code {
@@ -198,11 +211,40 @@ pre code {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
+    width: 87px;
     height: 60px;
     margin-right: -20px;
     background-color: #333;
     color: #fff;
+    position: relative;
+    cursor: pointer;
+  }
+  nav.navigation .menu:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    /* width: 300px; */
+    /* height: 600px; */
+    background-color: #fff;
+    z-index: 100;
+    border-left: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+  }
+  .menu-container a {
+    display: block;
+    text-align: right;
+    line-height: 40px;
+    padding: 10px 20px;
+    font-family: 'Lobster', cursive, Georgia, 'Times New Roman', Times, STKaiti, "楷体","楷体_GB2312", 'AR PL UKai CN', serif;
+  }
+  .menu-container a:hover {
+    color: #fff;
+    background-color: #333;
   }
 
   .list .item .meta {
@@ -214,5 +256,9 @@ pre code {
 
   .container .post .meta {
     display: block;
+  }
+
+  .footer {
+    font-size: 12px;
   }
 }

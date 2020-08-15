@@ -2,8 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.font.im/css?family=Lobster|Mate|PT+Mono" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/site.css">
@@ -31,14 +29,20 @@
           <a href="#">关于</a>
         </li>
       </ul>
-      <a class="menu">
-        m
-      </a>
+      <div class="menu" id="mini-nav">
+        导航
+        <div class="menu-container">
+          <a href="#1">主页</a>
+          <a href="#2">GIAO</a>
+          <a href="#3">订阅</a>
+          <a href="#4">关于</a>
+        </div>
+      </div>
     </nav>
     <div class="container">
       <div class="list">
               <div class="item">
-                <h1 class="title"><a href="#">GitHub 又放大招：全方位代码审查神器，你值得拥有！</a></h1>
+                <h1 class="title"><a href="test.html">GitHub 又放大招：全方位代码审查神器，你值得拥有！</a></h1>
                 <p>GitHub Daily： 大家好，我是小 G。 你是否同我一样，总感觉最近 GitHub 平台风平浪静，没再出啥新花招了？ 如果你也这么想，那你就大错特错了！ 昨日凌晨，GitHub Services De…</p>
                 <div class="meta">
                   <div class="tags">
@@ -50,7 +54,7 @@
               </div>
       
               <div class="item">
-                <h1 class="title"><a href="#">面试官：“你能手写一个 Promise 吗”</a></h1>
+                <h1 class="title"><a href="test.html">面试官：“你能手写一个 Promise 吗”</a></h1>
                 <p>关于手写 Promise，想必大家都十分熟悉。基本上现在不管是大厂还是小厂，手写 promise 已经成为了面试必考知识点。听说你还不太会？那么走着，带你从零开始解锁 Promise！ 查看完整…</p>
                 <div class="meta">
                   <div class="tags">
@@ -64,7 +68,7 @@
               </div>
       
               <div class="item">
-                <h1 class="title"><a href="#">Docker容器时间如何与宿主机同步问题解决方案小结</a></h1>
+                <h1 class="title"><a href="test.html">Docker容器时间如何与宿主机同步问题解决方案小结</a></h1>
                 <p>前言 如果在启动Docker容器的过程中没有单独配置localtime，很可能造成Docker容器时间与主机时间不一致的情况，比如UTC…</p>
                 <div class="meta">
                   <div class="tags">
@@ -76,7 +80,7 @@
               </div>
       
               <div class="item">
-                <h1 class="title"><a href="#">切换终端到Alacritty</a></h1>
+                <h1 class="title"><a href="test.html">切换终端到Alacritty</a></h1>
                 <p>今天升级了Arch系统，深度终端也升级到新版本，不知道哪个渣渣写的新版代码，一堆Bug，没法吐槽，真是越做越差了。 懒得折腾我原来写的深度终端老版，直 ...</p>
                 <div class="meta">
                   <div class="tags">
@@ -89,7 +93,7 @@
               </div>
       
               <div class="item">
-                <h1 class="title"><a href="#">2020年 微软应用商店里有哪些值得下载的优质应用？</a></h1>
+                <h1 class="title"><a href="test.html">2020年 微软应用商店里有哪些值得下载的优质应用？</a></h1>
                 <p>先了解下UWP，全称Universal Windows Platform，即「通用Windows平台」，可以在平板、电脑和手机上运行…</p>
                 <div class="meta">
                   <div class="tags">
@@ -102,7 +106,7 @@
               </div>
       
               <div class="item">
-                <h1 class="title"><a href="#">解决KDE下FFmpeg录制视频屏幕闪烁的问题</a></h1>
+                <h1 class="title"><a href="test.html">解决KDE下FFmpeg录制视频屏幕闪烁的问题</a></h1>
                 <p>KDE下，我使用我写的深度录屏录在制程序的时候，发现录制出来的视频一直有闪烁问题，最开始还以为是我代码哪里写错了。 今天搜索了一下，原来是KDE自己的...</p>
                 <div class="meta">
                   <div class="tags">
@@ -122,4 +126,38 @@
       Designed by nekoa &copy; gaolool@qq.com
     </footer>
   </body>
+  <script>
+    function stopPropagation(e) {
+      e = e || window.event;
+      if (e.stopPropagation) { //W3C阻止冒泡方法  
+        e.stopPropagation();
+      } else {
+        e.cancelBubble = true; //IE阻止冒泡方法  
+      }
+    }
+    function toggleMiniNav() {
+      document.querySelector('#mini-nav').addEventListener('click', function (evt) {
+        if (evt.target.querySelector('.menu-container')) {
+          let display = evt.target.querySelector('.menu-container').style.display;
+          console.log(display)
+          if (!display || display == 'none') {
+            evt.target.style.backgroundColor = '#fff';
+            evt.target.style.color = '#333';
+            evt.target.querySelector('.menu-container').style.display = 'block';
+          } else {
+            evt.target.style.backgroundColor = '#333';
+            evt.target.style.color = '#fff';
+            evt.target.querySelector('.menu-container').style.display = 'none';
+          }
+        }
+        stopPropagation();
+      }, false);
+    }
+    if (window.addEventListener) {
+      window.addEventListener('DOMContentLoaded', toggleMiniNav, false);   //firefox
+      // window.addEventListener('load', toggleMiniNav, false);
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', toggleMiniNav);  //IE
+    }
+  </script>
 </html>
