@@ -69,7 +69,7 @@ nav.navigation ul.links li a {
   line-height: 60px;
   padding: 0 15px;
   font-size: 20px;
-  font-family: 'Lobster', cursive, Georgia, 'Times New Roman', Times, STKaiti, "楷体","楷体_GB2312", 'AR PL UKai CN', 'ukai' serif;
+  font-family: 'Lobster', cursive, Georgia, 'Times New Roman', Times, STKaiti, "楷体","楷体_GB2312", 'AR PL UKai CN', 'ukai', serif;
 }
 
 nav.navigation ul.links li a.active, nav.navigation ul.links li a:hover {
@@ -92,7 +92,7 @@ nav.navigation ul.links li a.active, nav.navigation ul.links li a:hover {
 
 .container .post h1.title {
   font-size: 34px;
-  font-family: 'Lobster', cursive, Georgia, 'Times New Roman', Times, STKaiti, "楷体","楷体_GB2312", 'AR PL UKai CN', 'ukai' serif;
+  font-family: 'Lobster', cursive, Georgia, 'Times New Roman', Times, STKaiti, "楷体","楷体_GB2312", 'AR PL UKai CN', 'ukai', serif;
 }
 
 .container .post h4 {
@@ -128,7 +128,7 @@ nav.navigation ul.links li a.active, nav.navigation ul.links li a:hover {
 
 .list h1.title {
   font-size: 30px;
-  font-family: 'Lobster', cursive, Georgia, 'Times New Roman', Times, STKaiti, "楷体","楷体_GB2312", 'AR PL UKai CN', 'ukai' serif;
+  font-family: 'Lobster', cursive, Georgia, 'Times New Roman', Times, STKaiti, "楷体","楷体_GB2312", 'AR PL UKai CN', 'ukai', serif;
 }
 .list h1.title a {
   color: #333;
@@ -240,7 +240,7 @@ pre code {
     text-align: right;
     line-height: 40px;
     padding: 10px 20px;
-    font-family: 'Lobster', cursive, Georgia, 'Times New Roman', Times, STKaiti, "楷体","楷体_GB2312", 'AR PL UKai CN', 'ukai' serif;
+    font-family: 'Lobster', cursive, Georgia, 'Times New Roman', Times, STKaiti, "楷体","楷体_GB2312", 'AR PL UKai CN', 'ukai', serif;
   }
   .menu-container a:hover {
     color: #fff;
